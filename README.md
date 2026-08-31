@@ -1,3 +1,12 @@
+---
+description: "这门课教你搭好每个开发者, 甚至非开发者, 都要用到的几件基础工具: 用 mise 统一管理开发工具版本, 在 Mac 上装好 Terminal, VS Code, GitHub Desktop 这套本地环境, 再学会把这套环境交给一个真正能干活的 coding agent. 你不需要先会编程, 现在的 coding agent 已经足够强大, 你真正要学的是怎么给它搭好舞台, 并留一条随时能反悔的退路. 学完这门课, 你会有一套从零搭起的本地开发环境, 知道怎么用 Terminal 和 VS Code 精确指挥 AI 改文件, 也清楚去哪补齐账号和基本操作这两块前置技能. 这是一门 basic 难度的课."
+github_about: "教你装好 mise, Terminal, VS Code, GitHub Desktop 这套本地开发环境, 并给 coding agent 搭好能干活的舞台."
+---
+
 # learn_dev_tools_basic_v1-project
 
-Learn XYZ styled GitHub Repo Template
+这门课教你搭好每个开发者都要打交道的几件基础工具: 一个统一管理各种开发工具版本的方法 (mise), 一套能落地干活的本地环境 (Terminal, VS Code, GitHub Desktop), 以及怎么把这套环境交给一个真正能干活的 coding agent 去用. 这些工具本身都不新, 但很少有教程把它们串成一条线讲清楚为什么要按这个顺序装, 装完之后到底解决了什么问题.
+
+你不需要先会编程才能学这门课. 现在的 coding agent 已经强大到能替你写代码, 改配置, 做各种自动化, 你真正要学的是怎么给它搭好一个能干活的舞台, 并且留一条能随时反悔的退路. 学完这门课, 你会有一套从零搭好的本地开发环境, 会用 Terminal 和 VS Code 精确地告诉 AI 要改哪个文件, 也知道去哪补齐账号和基本操作这两块前置技能, 让自己随时能上手用 coding agent 干活. 这是一门 basic 难度的课.
+
+这门课刻意保持轻量: 遇到某个工具的进阶用法, 教程只提一嘴该往哪个方向查, 具体怎么做交给你现场问 AI, 而不是把每一种可能性都写成步骤. 从 `examples/` 的第一篇开始按编号往下读, 每篇讲完都配一个能当场验收的 TICKET.
