@@ -21,7 +21,7 @@
             "Edit(examples/*/README*.md)",
             "Edit(examples/*/TICKET*.md)",
             "Edit(./CLAUDE.md)",
-            "Edit(lesson_smith_readup_template/**/*.py)",
+            "Edit(learn_dev_tools_basic_v1/**/*.py)",
             "Edit(tests/**/*.py)",
             "Edit(scripts/**/*.py)",
             "Read(========== Bash Section ==========)",

@@ -1,5 +1,5 @@
 [project]
-name = "lesson_smith_readup_template"
+name = "learn_dev_tools_basic_v1"
 version = "0.1.1"
 requires-python = ">=3.12,<4.0"
 dependencies = [
@@ -7,7 +7,7 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["lesson_smith_readup_template*"]
+include = ["learn_dev_tools_basic_v1*"]
 exclude = [
 ]
 
