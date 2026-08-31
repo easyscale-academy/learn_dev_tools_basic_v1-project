@@ -5,6 +5,7 @@ docs/source/**/index.md
 .claude/claude-code-message*
 .claude/settings.local.json
 tmp/
+examples/_*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
