@@ -115,7 +115,7 @@ VS Code 有一个很多人都没留意的功能: 集成终端 (integrated termin
 
 ---
 
-## 9. 三工具的协作, 完整的工作流程
+## 9. 完整的工作流程, GitHub Desktop, VS Code, AI 怎么配合
 
 VS Code 不是独立工作的, 它是和 GitHub Desktop 配合的. 完整的工作流程是这样的:
 

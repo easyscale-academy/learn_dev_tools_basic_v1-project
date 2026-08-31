@@ -153,14 +153,7 @@ GitHub Desktop 是一个图形界面的 Git 管理工具, 让你不用记 Git �
 
 ## 10. 接下来用 mise 装什么
 
-现在你的 Mac 上已经有了三件套: VS Code 写代码, Ghostty 或 Terminal 跑命令, GitHub Desktop 管理项目. 接下来的课程会用到 Python 和 Claude Code, 这些都可以用 mise 装:
-
-```bash
-mise use python@3.12
-mise use npm:@anthropic-ai/claude-code
-```
-
-分分钟就能在你的电脑上跑起来.
+现在你的 Mac 上已经有了三件套: VS Code 写代码, Ghostty 或 Terminal 跑命令, GitHub Desktop 管理项目. 上一课提过, Python 和几个 coding agent 都能用 mise 装, 在 Mac 上也是同样那几行配置, 分分钟就能跑起来.
 
 ---
 

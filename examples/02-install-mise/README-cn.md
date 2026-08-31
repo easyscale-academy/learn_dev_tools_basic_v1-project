@@ -114,11 +114,28 @@ GitHub Codespace 默认使用 [bash](https://www.gnu.org/software/bash/). 如果
 
 > 我在用 mise 管理开发工具, 已经会基本的 `mise use` 命令了. 我想了解 `mise.toml` 里的 `[tasks]` 是怎么定义和运行的, 能不能给我举一两个贴近日常开发的例子, 再讲讲和直接写 shell 脚本相比它的好处是什么.
 
-如果你在 Codespace 里, 想用上某个 coding agent 的命令行版本, 也可以直接问:
+这条提示词不到一百个字, 但足够让 AI agent 顺着你当下的水平往下教, 比任何一份写死的教程都更贴合你的实际需要.
 
-> 我在 GitHub Codespace 里, 没有图形界面, 想用 mise 装一个 coding agent 的命令行版本, 比如 Codex CLI 或者 Antigravity CLI. 请告诉我具体用 mise 怎么装它, 装完之后怎么验证能正常用.
+**再提一嘴, 不是练习, 现在不用跑**: 这门课后面会认识的三大 coding agent, Claude Code, Codex CLI, Antigravity CLI, 再加上 Python, 基本都能用 mise 装. Python, Claude Code, Codex CLI 都发布了标准的安装方式, 直接写进 `mise.toml` 的 `[tools]` 就行:
 
-这两条提示词都不到一百个字, 但足够让 AI agent 顺着你当下的水平往下教, 比任何一份写死的教程都更贴合你的实际需要.
+```toml
+[tools]
+python = "3.12"
+"npm:@anthropic-ai/claude-code" = "latest"
+"npm:@openai/codex" = "latest"
+```
+
+Antigravity CLI 是个例外, 它官方没有发布 npm 包, 只给了一份自己的安装脚本, 装不进 `[tools]`. 但可以把这份脚本包进 `[tasks]`, 照样能让 mise 当你的统一入口:
+
+```toml
+[tasks.install-antigravity]
+description = "Install Antigravity CLI (它没有 npm 包, 用官方安装脚本代替)"
+run = "curl -fsSL https://antigravity.google/cli/install.sh | bash"
+```
+
+这正好说明 `[tasks]` 有多好用: 不管一个工具官方怎么发布, 你都能把它塞进 mise 这一套流程里, 不用单独记一个安装方式.
+
+要不要现在装这几个, 取决于你打算怎么用 coding agent. 如果你在 Mac 上打算用带图形界面的桌面版, 这几行和你没关系. 如果你在 GitHub Codespace 里, 没有图形界面, 只能用命令行版, 这条路基本是你唯一能走的.
 
 ---
 
@@ -165,7 +182,7 @@ GitHub Codespace 默认使用 [bash](https://www.gnu.org/software/bash/). 如果
 
 **下一步:**
 
-下一个 Task 会带你把开发环境从 Codespace 搬到自己的 Mac 上, 到时候 mise 会继续陪着你, 帮你在本地装好 Python 和 Claude Code.
+下一个 Task 会带你把开发环境从 Codespace 搬到自己的 Mac 上, mise 会继续陪着你, 在本地管理工具版本.
 
 ---
 
